@@ -1,6 +1,5 @@
 const addProductToCartTable = (event) => {
     event.preventDefault();
-    const error = document.getElementById('error');
     const productData = [
         {
             productName: document.getElementById('productName').value,
