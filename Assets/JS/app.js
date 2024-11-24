@@ -33,3 +33,4 @@ const deleteProductFromCartTable = () => {
     const deleteButton = document.getElementById('deleteFromTable');
     deleteButton.parentElement.parentElement.remove();
 }
+
