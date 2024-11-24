@@ -8,6 +8,40 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Add Product</h1>
+    <form id="addProduct" onsubmit="addProductToCartTable(event)">
+        <label for="productName">Product Name:</label>
+        <input type="text" id="productName" name="productName" placeholder="Enter product name" required>
+        <label for="productPrice">Product Price:</label>
+        <input type="number" id="productPrice" name="productPrice" placeholder="Enter product price" required minlength="0">
+        <label for="productCategory">Product Category:</label>
+        <select id="productCategory" name="productCategory" required>
+            <option value="" disabled selected>Select</option>
+            <option value="drinks">Drinks</option>
+            <option value="meat">Meat</option>
+            <option value="dairy">Dairy</option>
+            <option value="snacks"> Snacks</option>
+            <option value="basic">Basic</option>
+        </select>
+        <label for="productPhotoSrc">Product Photo Source:</label>
+        <input type="text" id="productPhotoSrc" name="productPhotoSrc" placeholder="Enter photo URL" required> <br>
+        <button id="submit" type="submit">Add Product</button>
+    </form>
+    <h1>My Cart</h1>
+    <table id="cartTable">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Product Price</th>
+                <th>Product Category</th>
+                <th>Product Photo</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                
+            </tr>
+        </tbody>
 </body>
 </html>
